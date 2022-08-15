@@ -1,0 +1,119 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #111;
+}
+.container h4 {
+  background: #03a9f4;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 600px;
+}
+.container {
+  position: relative;
+  background: white;
+  width: 350px;
+}
+.container ul {
+  position: relative;
+  padding: 20px;
+}
+
+.container ul li {
+  position: relative;
+  list-style: none;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.container ul li:last-child {
+  border-bottom: none;
+}
+
+.container ul li label {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container ul li input {
+  visibility: hidden;
+  appearance: none;
+}
+.container ul li label p {
+  position: absolute;
+}
+
+.container ul li label span {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+.container ul li label span::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  width: 10px;
+  height: 5px;
+  border-left: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  transform: rotate(-40deg);
+  color: white;
+}
+.container ul li label input:checked ~ p {
+  text-decoration: line-through;
+  color: #ccc;
+}
+.container ul li label input:checked ~ span {
+  background: #03a9f4;
+  border: 1px solid #ccc;
+}
+.Input-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.Input-container input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+.Input-container button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  padding: 0;
+  background: #03a9f4;
+  color: white;
+  font-weight: 100;
+  border-radius: 5px;
+}
+
+p {
+  margin: 0;
+  font-family: "fantasy";
+  font-size: 18px;
+}
+
+.Item button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 2px;
+  outline: none;
+  border: none;
+}
