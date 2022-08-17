@@ -3,10 +3,10 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #111;
+  background: gray;
 }
 .container h4 {
-  background: #03a9f4;
+  background: #0000cd;
   color: white;
   padding: 10px 20px;
   font-weight: 600px;
@@ -14,11 +14,10 @@
 .container {
   position: relative;
   background: white;
-  width: 350px;
+  width: 477px;
 }
 .container ul {
   position: relative;
-  padding: 20px;
 }
 
 .container ul li {
@@ -52,17 +51,17 @@
   position: relative;
   width: 20px;
   height: 20px;
-  border: 1px solid #ccc;
-  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-radius: 60%;
 }
 .container ul li label span::before {
   content: "";
   position: absolute;
-  top: 5px;
+  top: -5px;
   width: 10px;
-  height: 5px;
-  border-left: 2px solid #ccc;
-  border-bottom: 2px solid #ccc;
+  height: 15px;
+  border-left: 3px solid green;
+  border-bottom: 3px solid green;
   transform: rotate(-40deg);
   color: white;
 }
@@ -71,8 +70,15 @@
   color: #ccc;
 }
 .container ul li label input:checked ~ span {
-  background: #03a9f4;
-  border: 1px solid #ccc;
+  background-color: #ff033e;
+  border: 1px solid linear-gradient(to bottom, #bcc6cc, #eee, #bcc6cc);
+  transform: rotate(30deg);
+}
+.container ul li label input:checked ~ span::before {
+  content: "\00d7";
+  font-size: 30px;
+  left: -9px;
+  border: none;
 }
 .Input-container {
   display: flex;
@@ -93,14 +99,15 @@
   border-radius: 4px;
 }
 .Input-container button {
-  width: 40px;
   height: 40px;
+  width: 47px;
   border: none;
   padding: 0;
-  background: #03a9f4;
+  background: #0000cd;
   color: white;
   font-weight: 100;
   border-radius: 5px;
+  margin-right: -54px;
 }
 
 p {
