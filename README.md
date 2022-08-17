@@ -6,5 +6,5 @@ I have developed Todo List in Reacts with  Hooks. It is very beneficial for me t
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![](demo.gif)
 
